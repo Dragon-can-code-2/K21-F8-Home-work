@@ -1,0 +1,25 @@
+#navbar a {
+  color: #333;
+  text-decoration: none;
+}
+#navbar > ul > li {
+  display: inline-block;
+  padding: 8px 16px;
+}
+ul li ul li a {
+  color: red !important;
+}
+.content > p {
+  border-left: 3px solid #2196f3;
+  padding-left: 12px;
+}
+
+h2 ~ p {
+  font-weight: bold;
+  color: #1a1a2e;
+}
+
+.content h2,
+.content p {
+  font-family: "Segoe UI", sans-serif;
+}

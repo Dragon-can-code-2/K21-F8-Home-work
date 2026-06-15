@@ -1,0 +1,12 @@
+#green:checked ~ .content,
+#green:checked ~ .nav [for="green"] {
+  color: green;
+}
+#red:checked ~ .content,
+#red:checked ~ .nav [for="red"] {
+  color: red;
+}
+#blue:checked ~ .content,
+#blue:checked ~ .nav [for="blue"] {
+  color: blue;
+}

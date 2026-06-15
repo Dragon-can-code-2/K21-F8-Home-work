@@ -1,0 +1,35 @@
+ul li:first-child {
+  color: #e53935;
+  font-weight: bold;
+}
+
+ul li:last-child {
+  color: #1565c0;
+}
+
+ul li:nth-child(odd) {
+  background: #f5f5f5;
+}
+
+ul li:nth-child(even) {
+  background: #e8f4fd;
+}
+
+ul li:not(:last-child) {
+  border-bottom: 1px solid #dee2e6;
+}
+
+ul li:hover {
+  background: #fff9c4;
+  padding-left: 12px;
+  transition: all 0.2s;
+}
+
+ul li:nth-child(3n) {
+  font-style: italic;
+}
+
+#agree:checked + span {
+  color: #27ae60;
+  font-weight: bold;
+}

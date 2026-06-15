@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form đăng ký tham gia câu lạc bộ</title>
+  </head>
+  <body>
+    <form action="" id="club-form">
+      <div>
+        <label for="fullname">Họ và tên:</label>
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Nguyễn Văn A"
+          required
+          class="required-field"
+        />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="nguyenvana@gmail.com"
+          required
+          class="required-field"
+        />
+      </div>
+      <div>
+        <label for="phone-number">Số điện thoại:</label>
+        <input
+          type="number"
+          name="phone-number"
+          id=""
+          placeholder="0912345678"
+          required
+          class="required-field"
+        />
+      </div>
+      <div>
+        <label>Giới tính</label>
+        <label>
+          <input type="radio" name="gender" value="nam" />
+          Nam
+        </label>
+        <label>
+          <input type="radio" name="gender" value="nu" />
+          Nữ
+        </label>
+      </div>
+      <div>
+        <label for="caulacbo">Chọn câu lạc bộ</label>
+        <p><em><strong>CLB Lập trình:</strong> được ra quán cà phê ngồi cho thoải mái</em></p>
+        <p><em><strong>CLB Tiếng anh:</strong> được nói tiếng anh 100% trong suốt buổi học</em></p>
+        <p><em><strong>CLB Truyền thông:</strong> được viết báo cho toà soạn báo Hoa Học Trò</em></p>
+        <p><em><strong>CLB Âm nhạc:</strong> được hát song ca với Phương Mỹ Chi</em></p>
+        <select name="caulacbo" id="caulacbo">
+          <option value="">Chọn câu lạc bộ</option>
+          <option value="laptrinh">CLB Lập trình</option>
+          <option value="tienganh">CLB Tiếng anh</option>
+          <option value="truyenthong">CLB Truyền thông</option>
+          <option value="amnhac">CLB Âm nhạc</option>
+        </select>
+      </div>
+      <div>
+        <label>Sở thích</label>
+        <label>
+          <input type="checkbox" value="docsach" name="sothich" />
+          Đọc sách
+        </label>
+        <label>
+          <input type="checkbox" value="choithethao" name="sothich" />
+          Chơi thể thao
+        </label>
+        <label>
+          <input type="checkbox" value="dulich" name="sothich" />
+          Du lịch
+        </label>
+        <label>
+          <input type="checkbox" value="congnghe" name="sothich" />
+          Công nghệ
+        </label>
+      </div>
+      <div>
+        <label for="gioithieubanthan">Giới thiệu bản thân</label>
+        <textarea
+          name="gioithieubanthan"
+          id="gioithieubanthan"
+          cols="20"
+          rows="5"
+          placeholder="Giới thiệu bản thân mình"
+        ></textarea>
+      </div>
+      <div>
+        <label for="agreement">
+          <input type="checkbox" name="agreement" id="agreement" required
+          class="required-field"/>Tôi cam kết các thông tin trên là chính xác.
+        </label>
+      </div>
+      <div>
+        <input type="submit" value="Gửi đăng ký"></input>
+        <input type="reset" value="Làm lại"></input>
+      </div>
+    </form>
+  </body>
+</html>
