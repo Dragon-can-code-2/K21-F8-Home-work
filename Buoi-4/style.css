@@ -1,12 +1,110 @@
-#green:checked ~ .content,
-#green:checked ~ .nav [for="green"] {
-  color: green;
+.bai-tap-1,
+.bai-tap-2,
+.bai-tap-3 {
+  width: 100%;
+  height: 100vh;
 }
-#red:checked ~ .content,
-#red:checked ~ .nav [for="red"] {
-  color: red;
+.bai-tap-1 {
+  background-color: rgb(197, 254, 208);
 }
-#blue:checked ~ .content,
-#blue:checked ~ .nav [for="blue"] {
+
+.course-box {
+  background-color: white;
+  border: 3px solid rgb(128, 216, 251);
+  border-radius: 16px;
+}
+
+.course-box h2 {
+  text-align: center;
+  color: crimson;
+  text-transform: uppercase;
+}
+
+.course-box .subtitle {
+  text-align: center;
+  color: grey;
+  font-style: italic;
+}
+
+.course-box .description {
+  color: blueviolet;
+  line-height: 1.5;
+}
+
+.course-box .note {
+  background-color: rgb(243, 253, 197);
+  border: 3px solid rosybrown;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bai-tap-2 {
+  background-color: lightgray;
+}
+
+.event-card {
+  background-color: rgb(206, 239, 255);
+  border: 5px solid rgb(158, 46, 46);
+  border-radius: 16px;
+}
+
+.event-card h2 {
   color: blue;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.event-card .time {
+  font-weight: bold;
+  text-align: center;
+}
+
+.event-card .content {
+  color: blueviolet;
+  line-height: 1.5;
+}
+
+.event-card .status {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.bai-tap-3 {
+  background-color: rgb(255, 255, 223);
+}
+
+.discount-box {
+  background-color: white;
+  border: 3px solid orange;
+  border-radius: 16px;
+}
+
+.discount-box h2 {
+  color: orange;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.discount-box .main-text {
+  text-align: center;
+  color: blueviolet;
+}
+
+.discount-box .discount-info {
+  background-color: rgb(193, 253, 202);
+  border: 3px dotted darkblue;
+  border-radius: 16px;
+  font-weight: bold;
+}
+
+/* .discount-box .discount-info p {
+  font-weight: bold;
+} */
+
+.discount-box .warning {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
 }
