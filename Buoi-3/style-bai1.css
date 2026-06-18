@@ -24,8 +24,7 @@ p {
   font-size: 0.85rem;
   margin: 4px;
 }
-.tag,
-.highlight {
+.tag.highlight {
   background: #e53935;
   color: white;
 }

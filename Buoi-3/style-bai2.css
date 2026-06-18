@@ -14,9 +14,14 @@ ul li ul li a {
   padding-left: 12px;
 }
 
-h2 ~ p {
+.content h2 + p {
   font-weight: bold;
   color: #1a1a2e;
+}
+
+.content h2 ~ p {
+  font-size: 1.05rem;
+  color: #555;
 }
 
 .content h2,
