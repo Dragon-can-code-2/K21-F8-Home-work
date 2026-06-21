@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: roboto;
+}
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 32px auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .active {
+  color: #ad5727;
+}
+.nav-left li,
+.nav-right li {
+  display: inline-block;
+  font-size: 0;
+}
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.nav-left a {
+  margin-right: 32px;
+}
+.nav-right a {
+  margin-left: 32px;
+}
+.nav-left a:hover,
+.nav-right a:hover {
+  color: #ad5727;
+}
+.nav-logo img {
+  height: 70px;
+}
+.banner-hero {
+  width: 100%;
+}
+.about {
+  text-align: center;
+  margin: 48px 0;
+}
+.about .section-subtitle {
+  color: #bb7e52;
+  text-transform: uppercase;
+}
+.about h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+.content .section-header {
+  text-align: center;
+  padding: 16px;
+}
+.content .section-header .section-title {
+  font-size: 16px;
+  color: #bb7e52;
+  font-weight: normal;
+}
+.content .section-header .section-subtitle {
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.banner {
+  margin: 64px 0;
+  width: 100%;
+}
+footer {
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer form input[type="email"] {
+  padding: 10px 40px 10px 10px;
+}
+footer form input[type="submit"] {
+  padding: 10px;
+  background-color: #3a3a3a;
+  color: white;
+}
