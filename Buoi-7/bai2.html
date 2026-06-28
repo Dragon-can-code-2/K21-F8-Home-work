@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: aliceblue;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 300px;
+            margin: 40px auto;
+        }
+
+        .box .item {
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        .box .item .item-img {
+            background: #2A7B9B;
+            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .box .item .item-content {
+            padding: 20px;
+        }
+
+        .box .item .item-content h4 {
+            font-size: 16px;
+        }
+
+        .box .item .item-content p {
+            margin-top: 5px;
+        }
+
+        .box .item:hover .item-img {
+            background: #2A7B9B;
+            background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+            opacity: 1;
+        }
+
+        .box .item:hover img {
+            opacity: 1 !important;
+            transition: 0.3s ease-in-out;
+        }
+
+        .box .item:hover h4,
+        .box .item:hover p {
+            opacity: 1;
+            transition: 0.3s ease-in-out;
+            color: black;
+            background: white;
+        }
+
+        .item.loading .item-img,
+        .item.loading h4,
+        .item.loading p {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e4e4e4 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s ease-in;
+            color: transparent;
+            /* Ẩn chữ thật đi */
+            border-radius: 4px;
+            transition: 0.3s ease-out;
+        }
+
+        .item.loading .item-img img {
+            opacity: 0;
+        }
+
+        .item.loading .item-img {
+            height: 320px;
+            border-radius: 0;
+        }
+
+        .item.loading h4 {
+            width: 40%;
+            height: 24px;
+            margin-bottom: 12px;
+        }
+
+        .item.loading p {
+            width: 100%;
+            height: 40px;
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 200% 0;
+            }
+
+            100% {
+                background-position: -200% 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="item loading">
+                <div class="item-img skeleton skeleton-avatar">
+                    <img src="css/tree.png" alt="">
+                </div>
+                <div class="item-content">
+                    <h4>Quang Cảnh</h4>
+                    <p>Cây cảnh nhiệt đới dễ chăm, lá lớn đặc trưng, hợp không gian trong nhà.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 600px;
+  margin: 100px auto;
+}
+.container .btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.show-cards {
+  width: 130px;
+  height: 40px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.show-cards:hover {
+  background-color: rgb(84, 84, 84);
+  transition: 0.3s;
+}
+
+.show-cards:has(input:checked) {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.container:has(#show-cards:checked) .items {
+  opacity: 1;
+  visibility: visible;
+}
+
+.items {
+  display: flex;
+  gap: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.items .item {
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  /* height: 200px; */
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.items .item .item-content h4 {
+  padding: 10px 0;
+}
+
+.items .item .item-content p {
+  color: rgb(121, 121, 121);
+}
+
+.item-content {
+  display: block;
+}
+
+.item {
+  position: relative;
+  transition: 0.6s;
+}
+
+.item-description .item-description-content p {
+  margin: 10px 0;
+}
+
+.item-description .tag-new {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  color: red;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: rgb(255, 153, 153);
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.item-description {
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  inset: 0;
+  transition: 0.6s;
+  transform: rotateY(-90deg);
+}
+
+.item-description .price {
+  color: rgb(70, 70, 255);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.item:hover .item-description {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateY(0deg);
+}
+
+.item:hover .item-content {
+  opacity: 0;
+  transform: rotateY(90deg);
+}
