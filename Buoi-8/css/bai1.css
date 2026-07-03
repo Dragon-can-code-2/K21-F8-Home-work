@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto";
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  height: 4000px;
+}
+header {
+  background-image: url("https://themazine.com/html/scholars-lms/images/home/banner-10.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+}
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.container {
+  width: 100%;
+  height: auto;
+}
+.breadcrumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.breadcrumb h3 {
+  margin-bottom: 15px;
+}
+.nav-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 15px 10px;
+}
+.nav-bar .menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.4s;
+}
+.nav-bar .nav-bar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.nav-bar .nav-bar-top .mobile-nav-bar-left {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-bar .nav-bar-top .mobile-nav-bar-left a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+}
+
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  margin-top: 20px;
+}
+
+.mobile-menu li {
+  display: block;
+  padding: 15px;
+  background-color: black;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.mobile-menu li a {
+  text-decoration: none;
+  color: rgb(212, 212, 212);
+}
+
+.menu-toggle:checked ~ .mobile-menu {
+  max-height: 400px;
+  opacity: 1;
+  overflow: auto;
+}
+
+.nav-bar .menu {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-bar .menu a {
+  color: white;
+}
+
+@media screen and (min-width: 990px) {
+  .mobile-menu-btn {
+    display: none;
+    opacity: 0;
+  }
+  .nav-bar .menu {
+    max-height: 400px;
+    opacity: 1;
+    overflow: auto;
+    transition: 0.4s;
+  }
+  .nav-bar {
+    width: 1120px;
+    margin: 0 auto;
+  }
+}
