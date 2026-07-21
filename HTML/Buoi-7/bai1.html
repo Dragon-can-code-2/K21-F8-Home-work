@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bai1.css">
+    <style>
+        .burger {
+            position: relative;
+            width: 32px;
+            height: 4px;
+        }
+
+        .burger::before,
+        .burger::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #333;
+            transition: 0.3s
+        }
+
+        input:checked+.burger {
+            background: transparent;
+        }
+
+        input:checked+.burger::before {
+            transform: rotate(45deg);
+        }
+
+        input:checked+.burger::after {
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <label class="btn-menu-toggle">
+        <input type="checkbox" hidden>
+        <span class="close">&times;</span>
+        <span class="open">☰</span>
+    </label> -->
+
+    <label class="btn-menu-toggle">
+        <input type="checkbox" hidden>
+        <div class="burger">
+        </div>
+    </label>
+</body>
+
+</html>
