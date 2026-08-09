@@ -56,3 +56,22 @@ const greetEn = createGreeter("Hello");
 greetVi("An"); // "Xin chào, An!"
 greetEn("An"); // "Hello, An!"
 
+/* bài 5 */
+function fetchDataMock(id, callback) {
+  setTimeout(() => {
+    if (id > 0) {
+      callback(null, `dữ liệu của id: ${id}`);
+    } else {
+      callback("Invalid id", null);
+    }
+  }, 1000);
+}
+
+fetchDataMock(5, (error, data) => {
+  if (error) return console.log("Error:", error);
+  console.log("Data:", data);
+});
+
+fetchDataMock(-1, (error, data) => {
+  if (error) return console.log("Error:", error); // phải in ra lỗi
+});
