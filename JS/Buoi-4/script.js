@@ -92,3 +92,40 @@ function compressString(str) {
 compressString("aaabbbccd"); // → "a3b3c2d1"
 compressString("abc");       // → "abc" (vì nén ra "a1b1c1" dài hơn)
 
+/* bài 5 */
+
+function isAnagram(str1, str2) {
+  str1 = str1.toLowerCase().replaceAll(" ", "");
+  str2 = str2.toLowerCase().replaceAll(" ", "");
+
+  if (str1.length !== str2.length) {
+    return false;
+  }
+
+  for (let i = 0; i < str1.length; i++) {
+    let count1 = 0;
+    let count2 = 0;
+
+    for (let j = 0; j < str1.length; j++) {
+      if (str1[i] === str1[j]) {
+        count1++;
+      }
+    }
+
+    for (let j = 0; j < str2.length; j++) {
+      if (str1[i] === str2[j]) {
+        count2++;
+      }
+    }
+
+    if (count1 !== count2) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(isAnagram("nghe si", "sinh e"))   // → true (nếu cùng tập ký tự) 
+console.log(isAnagram("nhe si", "sinh e"))   // → true (nếu cùng tập ký tự) 
+console.log(isAnagram("hello", "world"));      // → false
