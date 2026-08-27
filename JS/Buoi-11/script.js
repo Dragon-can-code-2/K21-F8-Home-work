@@ -45,6 +45,7 @@ let todos = JSON.parse(localStorage.getItem("todos")) || [];
 // TODO 1.2: Khai báo biến `currentFilter` để lưu bộ lọc đang chọn.
 //   Giá trị có thể là: "all" | "active" | "completed". Mặc định là "all".
 let currentFilter = "all";
+let draggedTodoId = null;
 
 // ============================================
 // BƯỚC 2: CÁC HÀM XỬ LÝ DỮ LIỆU
@@ -183,6 +184,27 @@ function render() {
     const clone = template.content.cloneNode(true);
     const li = clone.querySelector(".todo-item")
     li.dataset.id = todo.id;
+    li.draggable = true;
+    li.addEventListener("dragstart", () => {
+      draggedTodoId = todo.id;
+    })
+    li.addEventListener("dragover", (e) => {
+      e.preventDefault();
+    });
+    li.addEventListener("drop", () => {
+      const draggedIndex = todos.findIndex(item => {
+        return item.id === draggedTodoId;
+      });
+      const targetIndex = todos.findIndex(item => {
+        return item.id === todo.id;
+      });
+      const temp = todos[draggedIndex];
+      todos[draggedIndex] = todos[targetIndex];
+      todos[targetIndex] = temp;
+      saveTodos();
+      render();
+
+    });
     if (todo.completed === true) {
       li.classList.add("is-completed");
     }

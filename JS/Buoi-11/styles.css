@@ -7,8 +7,10 @@
   --accent: #e8a33d;
   --sage: #7c9885;
   --done: #565947;
-  --font-display: "Space Grotesk", sans-serif;
-  --font-hand: "Kalam", cursive;
+  /* --font-display: "Space Grotesk", sans-serif; */
+  /* --font-hand: "Kalam", cursive; */
+  --font-hand: "Arial";
+  --font-display: "Arial";
 }
 
 * {
