@@ -1,0 +1,166 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "One Piece - Tập 1",
+      "price": 25000,
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "One Piece - Tập 2",
+      "price": 25000,
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "One Piece - Tập 2",
+      "price": 25000,
+      "status": true
+    },
+    {
+      "id": 4,
+      "name": "One Piece - Tập 2",
+      "price": 25000,
+      "status": true
+    },
+    {
+      "id": 5,
+      "name": "One Piece - Tập 2",
+      "price": 25000,
+      "status": true
+    },
+    {
+      "id": 6,
+      "name": "Naruto - Tập 1",
+      "price": 25000,
+      "status": true
+    },
+    {
+      "id": 7,
+      "name": "Naruto - Tập 20",
+      "price": 28000,
+      "status": false
+    },
+    {
+      "id": 8,
+      "name": "Naruto - Tập 50",
+      "price": 30000,
+      "status": true
+    },
+    {
+      "id": 9,
+      "name": "Dragon Ball Super - Tập 1",
+      "price": 30000,
+      "status": true
+    },
+    {
+      "id": 10,
+      "name": "Dragon Ball Super - Tập 5",
+      "price": 30000,
+      "status": false
+    },
+    {
+      "id": 11,
+      "name": "Demon Slayer - Tập 1",
+      "price": 30000,
+      "status": true
+    },
+    {
+      "id": 12,
+      "name": "Demon Slayer - Tập 10",
+      "price": 32000,
+      "status": true
+    },
+    {
+      "id": 13,
+      "name": "Demon Slayer - Tập 20",
+      "price": 35000,
+      "status": false
+    },
+    {
+      "id": 14,
+      "name": "Jujutsu Kaisen - Tập 1",
+      "price": 30000,
+      "status": true
+    },
+    {
+      "id": 15,
+      "name": "Jujutsu Kaisen - Tập 5",
+      "price": 32000,
+      "status": true
+    },
+    {
+      "id": 16,
+      "name": "Jujutsu Kaisen - Tập 10",
+      "price": 35000,
+      "status": false
+    },
+    {
+      "id": 17,
+      "name": "Attack on Titan - Tập 1",
+      "price": 30000,
+      "status": true
+    },
+    {
+      "id": 18,
+      "name": "Attack on Titan - Tập 10",
+      "price": 35000,
+      "status": true
+    },
+    {
+      "id": 19,
+      "name": "My Hero Academia - Tập 1",
+      "price": 30000,
+      "status": false
+    },
+    {
+      "id": 20,
+      "name": "Chainsaw Man - Tập 1",
+      "price": 35000,
+      "status": true
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "F8 - Tự Học Lập Trình",
+      "content": "tự học tự làm là một cách để nhớ và hiểu nhanh hơn",
+      "status": true,
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "title": "Khoá học làm giàu",
+      "content": "Nhờ ba mẹ bán đất xong dùng tiền đánh tìu xải",
+      "status": false,
+      "userId": 3
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Võ Thị Sáu",
+      "position": "Quản Lý",
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "Võ Văn Tần",
+      "position": "Quản Lý",
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "Hoàng Văn Thụ",
+      "position": "Thực Tập Sinh",
+      "status": false
+    },
+    {
+      "id": 4,
+      "name": "Lạc Long Quân",
+      "position": "Nhân Viên Chính Thức",
+      "status": true
+    }
+  ]
+}
