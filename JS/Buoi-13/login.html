@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Đăng nhập</title>
+
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+
+    <main class="auth">
+
+        <section class="auth__container">
+
+            <!-- LEFT: GIỚI THIỆU -->
+            <div class="auth__intro">
+
+                <div class="auth__logo">
+                    MyApp
+                </div>
+
+                <div class="auth__content">
+                    <p class="auth__eyebrow">
+                        Chào mừng bạn
+                    </p>
+
+                    <h1 class="auth__title">
+                        Bắt đầu hành trình
+                        <span>của bạn.</span>
+                    </h1>
+
+                    <p class="auth__description">
+                        Đăng nhập để tiếp tục sử dụng tài khoản của bạn
+                        hoặc tạo một tài khoản mới hoàn toàn miễn phí.
+                    </p>
+                </div>
+
+                <p class="auth__copyright">
+                    © 2026 MyApp. All rights reserved.
+                </p>
+
+            </div>
+
+
+            <!-- RIGHT: FORM -->
+            <div class="auth__forms">
+
+                <!-- ==================== -->
+                <!-- FORM ĐĂNG NHẬP -->
+                <!-- ==================== -->
+
+                <div class="form">
+
+                    <div class="form__header">
+                        <h2 class="form__title">
+                            Đăng nhập
+                        </h2>
+
+                        <p class="form__subtitle">
+                            Chào mừng bạn quay trở lại!
+                        </p>
+                    </div>
+
+
+                    <form id="login-form">
+
+                        <!-- EMAIL -->
+                        <div class="form__group">
+
+                            <label for="login-username">
+                                Email
+                            </label>
+
+                            <input type="text" id="login-username" placeholder="username1" autocomplete="email">
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="form__group">
+
+                            <div class="form__label-row">
+
+                                <label for="login-password">
+                                    Mật khẩu
+                                </label>
+
+                                <a href="#">
+                                    Quên mật khẩu?
+                                </a>
+
+                            </div>
+
+                            <input type="password" id="login-password" placeholder="••••••••"
+                                autocomplete="current-password">
+
+                        </div>
+
+
+                        <!-- REMEMBER -->
+                        <div class="form__remember">
+
+                            <label>
+                                <input type="checkbox">
+                                <span>Ghi nhớ đăng nhập</span>
+                            </label>
+
+                        </div>
+
+
+                        <!-- BUTTON -->
+                        <button type="submit" class="form__button">
+                            Đăng nhập
+                        </button>
+
+                    </form>
+
+
+                    <!-- DIVIDER -->
+
+                    <div class="divider">
+                        <span>hoặc</span>
+                    </div>
+
+
+                    <!-- GOOGLE -->
+
+                    <button type="button" class="social-button">
+                        <span class="social-button__icon">
+                            G
+                        </span>
+
+                        Tiếp tục với Google
+                    </button>
+
+
+                    <!-- REGISTER -->
+
+                    <p class="form__switch">
+                        Chưa có tài khoản?
+
+                        <a href="register.html">
+                            Đăng ký ngay
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <!-- ==================== -->
+                <!-- FORM ĐĂNG KÝ -->
+                <!-- ==================== -->
+
+                <div class="form form--register">
+
+                    <div class="form__header">
+
+                        <h2 class="form__title">
+                            Tạo tài khoản
+                        </h2>
+
+                        <p class="form__subtitle">
+                            Đăng ký để bắt đầu sử dụng.
+                        </p>
+
+                    </div>
+
+
+                    <form>
+
+                        <!-- NAME -->
+
+                        <div class="form__group">
+
+                            <label for="register-name">
+                                Họ và tên
+                            </label>
+
+                            <input type="text" id="register-name" placeholder="Nguyễn Văn A" autocomplete="name">
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form__group">
+
+                            <label for="register-email">
+                                Email
+                            </label>
+
+                            <input type="email" id="register-email" placeholder="you@example.com" autocomplete="email">
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+
+                        <div class="form__group">
+
+                            <label for="register-password">
+                                Mật khẩu
+                            </label>
+
+                            <input type="password" id="register-password" placeholder="••••••••"
+                                autocomplete="new-password">
+
+                        </div>
+
+
+                        <!-- CONFIRM PASSWORD -->
+
+                        <div class="form__group">
+
+                            <label for="register-confirm-password">
+                                Nhập lại mật khẩu
+                            </label>
+
+                            <input type="password" id="register-confirm-password" placeholder="••••••••"
+                                autocomplete="new-password">
+
+                        </div>
+
+
+                        <button type="submit" class="form__button">
+                            Đăng ký
+                        </button>
+
+                    </form>
+
+
+                    <p class="form__switch">
+                        Đã có tài khoản?
+
+                        <a href="#">
+                            Đăng nhập
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>

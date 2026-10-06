@@ -1,0 +1,488 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #f3f5f9;
+  color: #172033;
+}
+
+/* =========================
+   AUTH
+========================= */
+
+.auth {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 20px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.auth__container {
+  width: 100%;
+  max-width: 1050px;
+  min-height: 650px;
+
+  display: grid;
+  grid-template-columns: 45% 55%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  box-shadow: 0 25px 60px rgba(20, 30, 50, 0.12);
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.auth__intro {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 48px;
+
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+
+  color: white;
+}
+
+.auth__logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.auth__content {
+  margin: auto 0;
+}
+
+.auth__eyebrow {
+  margin-bottom: 14px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  opacity: 0.8;
+}
+
+.auth__title {
+  max-width: 400px;
+
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.05;
+
+  letter-spacing: -2px;
+}
+
+.auth__title span {
+  display: block;
+
+  color: #bfdbfe;
+}
+
+.auth__description {
+  max-width: 420px;
+
+  margin-top: 24px;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #dbeafe;
+}
+
+.auth__copyright {
+  font-size: 13px;
+
+  color: #bfdbfe;
+}
+
+/* =========================
+   FORMS AREA
+========================= */
+
+.auth__forms {
+  position: relative;
+
+  padding: 70px 80px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+  width: 100%;
+  max-width: 420px;
+
+  margin: auto;
+}
+
+.form--register {
+  display: none;
+}
+
+.form__header {
+  margin-bottom: 32px;
+}
+
+.form__title {
+  margin-bottom: 8px;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  letter-spacing: -1px;
+}
+
+.form__subtitle {
+  color: #697386;
+
+  font-size: 15px;
+}
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form__group {
+  margin-bottom: 20px;
+}
+
+.form__group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #344054;
+}
+
+.form__group input {
+  width: 100%;
+  height: 50px;
+
+  padding: 0 15px;
+
+  border: 1px solid #d9dee8;
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: #fff;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.form__group input::placeholder {
+  color: #a0a8b8;
+}
+
+.form__group input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================
+   LABEL ROW
+========================= */
+
+.form__label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+.form__label-row label {
+  margin-bottom: 0;
+}
+
+.form__label-row a {
+  font-size: 13px;
+
+  color: #2563eb;
+
+  text-decoration: none;
+}
+
+.form__label-row a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   REMEMBER
+========================= */
+
+.form__remember {
+  margin: 4px 0 22px;
+}
+
+.form__remember label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+
+  color: #667085;
+
+  cursor: pointer;
+}
+
+.form__remember input {
+  width: 16px;
+  height: 16px;
+
+  accent-color: #2563eb;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.form__button {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
+}
+
+.form__button:hover {
+  background: #1d4ed8;
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+
+  transform: translateY(-1px);
+}
+
+.form__button:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin: 28px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  background: #e5e7eb;
+}
+
+.divider span {
+  font-size: 13px;
+
+  color: #98a2b3;
+}
+
+/* =========================
+   SOCIAL BUTTON
+========================= */
+
+.social-button {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: 1px solid #d9dee8;
+  border-radius: 10px;
+
+  background: white;
+
+  color: #344054;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s;
+}
+
+.social-button:hover {
+  background: #f8fafc;
+}
+
+.social-button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* =========================
+   SWITCH
+========================= */
+
+.form__switch {
+  margin-top: 28px;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  color: #667085;
+}
+
+.form__switch a {
+  margin-left: 4px;
+
+  color: #2563eb;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.form__switch a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+  .auth {
+    padding: 20px;
+  }
+
+  .auth__container {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+  }
+
+  .auth__intro {
+    min-height: 300px;
+
+    padding: 35px;
+  }
+
+  .auth__content {
+    margin-top: 70px;
+  }
+
+  .auth__title {
+    font-size: 40px;
+  }
+
+  .auth__description {
+    margin-top: 16px;
+  }
+
+  .auth__copyright {
+    margin-top: 50px;
+  }
+
+  .auth__forms {
+    padding: 50px 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth {
+    padding: 0;
+  }
+
+  .auth__container {
+    border-radius: 0;
+
+    min-height: 100vh;
+  }
+
+  .auth__intro {
+    min-height: 250px;
+
+    padding: 28px;
+  }
+
+  .auth__title {
+    font-size: 34px;
+  }
+
+  .auth__description {
+    font-size: 14px;
+  }
+
+  .auth__forms {
+    padding: 40px 25px;
+  }
+
+  .form__title {
+    font-size: 28px;
+  }
+}
